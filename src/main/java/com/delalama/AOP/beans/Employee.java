@@ -1,8 +1,5 @@
 package com.delalama.AOP.beans;
 
-import lombok.Data;
-
-@Data
 public class Employee {
 
     private String id;
@@ -10,5 +7,29 @@ public class Employee {
 
     public void getMessage() {
         System.out.println("Hello, i'm a Employee");
+    }
+
+    public Employee() {
+    }
+
+    public Employee(String id, String name) {
+        this.id = id;
+        this.name = name;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 }
